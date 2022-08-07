@@ -11,9 +11,11 @@ AGE=26
 NAME="Albert"
 JOB="Software Engineer Intern"
 USER="betinn"
+CHECKED=false
 
-if [ whoami == $USER];
+if [ whoami ];
     then
+	CHECKED=true;
         echo " ------------ Hello Community Linux!! ------------"
         echo "|                                                 |"
         echo "  My name is $NAME have $AGE years and i'm         "
@@ -21,10 +23,10 @@ if [ whoami == $USER];
         echo "|                                                 |"
         echo " ------------------------------------------------- "
     else
-        echo "Invalid!!! Who are you? ;D $whoami"
+        echo "Invalid!!! Who are you? ;D"
 fi
 
-if [ whoami ]; then 
+if [ CHECKED ]; then 
     RESPONSE=""
     echo "Send the good"
     read  RESPONSE;
