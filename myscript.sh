@@ -12,11 +12,11 @@ pwd
 AGE=26
 NAME="Albert"
 JOB="Software Engineer Intern"
-CHECKED=0
+CHECKED=false
 
 if [ whoami ];
     then
-	CHECKED=1;
+	CHECKED=true;
         echo " ------------ Hello Community Linux!! ------------"
         echo "|                                                 |"
         echo "  My name is $NAME have $AGE years and i'm         "
@@ -27,7 +27,7 @@ if [ whoami ];
         echo "Invalid!!! Who are you? ;D"
 fi
 
-if [ whoami ]; then 
+if [ CHECKED ]; then 
     echo "Send it to the good foreigner"
     read  RESPONSE;
 
