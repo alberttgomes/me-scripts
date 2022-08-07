@@ -27,7 +27,7 @@ if [ whoami ];
         echo "Invalid!!! Who are you? ;D"
 fi
 
-if [ CHECKED ]; then 
+if [ !CHECKED ]; then 
     echo "Send it to the good foreigner"
     read  RESPONSE;
 
