@@ -2,20 +2,21 @@
 #Author: alberttgomes
 echo "Hi," 
 whoami
+echo ""
 DAY=`date`
 echo "Date: $DAY"
-echo "Current Directory"
+echo ""
+echo "Current Directory: "
 pwd
 
 AGE=26
 NAME="Albert"
 JOB="Software Engineer Intern"
-USER="betinn"
-CHECKED=false
+CHECKED=0
 
 if [ whoami ];
     then
-	CHECKED=true;
+	CHECKED=1;
         echo " ------------ Hello Community Linux!! ------------"
         echo "|                                                 |"
         echo "  My name is $NAME have $AGE years and i'm         "
@@ -26,16 +27,14 @@ if [ whoami ];
         echo "Invalid!!! Who are you? ;D"
 fi
 
-if [ CHECKED ]; then 
-    RESPONSE=""
-    echo "Send the good"
+if [ whoami ]; then 
+    echo "Send it to the good foreigner"
     read  RESPONSE;
 
-    if [ RESPOSTA != "" ]; 
-        then
-            echo "I don't know what you speak rsrs..."
-        else 
-            echo "You need to write something."
+    if [[ -z "$RESPONSE" ]]; then
+         echo "You need to write something."
+       elif [[ -n $RESPONSE ]]; then
+      	echo "Idon't know what you said rsrs..."	       
+    fi    
 fi
-
 
