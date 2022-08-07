@@ -34,7 +34,7 @@ if [ CHECKED ]; then
     if [[ -z "$RESPONSE" ]]; then
          echo "You need to write something."
        elif [[ -n $RESPONSE ]]; then
-      	echo "Idon't know what you said rsrs..."	       
+         echo "Idon't know what you said rsrs..."	       
     fi    
 fi
 
