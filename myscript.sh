@@ -9,20 +9,22 @@ echo ""
 echo "Current Directory: "
 pwd
 
-AGE=26
-NAME="Albert"
-JOB="Software Engineer Intern"
+USER="alberttgomes"
+Name="Albert Gomes"
+JOB="Software Engineer"
 CHECKED=false
 
-if [ whoami ];
-    then
-	CHECKED=true;
+if [ whoami -eq $USER ] then;
+	    
+        CHECKED=true;
+
         echo " ------------ Hello Community Linux!! ------------"
         echo "|                                                 |"
-        echo "  My name is $NAME have $AGE years and i'm         "
-        echo "  $JOB                                             "
+        echo "   Hi gueys,                                       "
+        echo "   My name is $NAME i'm $JOB at Liferay            "
         echo "|                                                 |"
         echo " ------------------------------------------------- "
+
     else
         echo "Invalid!!! Who are you? ;D"
 fi
