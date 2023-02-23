@@ -16,7 +16,8 @@ function routine () {
 
     DIR="/home/dev/projects/$PROJECTWORKSPACE"  
 
-    if [ -d "$DIR" ]; then
+    if [ -d "$DIR" ]
+    then
         echo "'$DIR' Found!"
     else
         echo "'$DIR' Not Found!"
@@ -29,7 +30,8 @@ function routine () {
     echo "=========== Read the name of the database project"
     read DATABASE
 
-    if [ -z "$DATABASE"]; then
+    if [ -z "$DATABASE"] 
+    then
         docker start "$DATABASE"
     else 
         echo "=========== Value is null, writing the value valid!"
