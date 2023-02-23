@@ -15,18 +15,15 @@ JOB="Software Engineer"
 CHECKED=false
 
 if [ whoami -eq $USER ] then;
-	    
-        CHECKED=true;
-
-        echo " ------------ Hello Community Linux!! ------------"
-        echo "|                                                 |"
-        echo "   Hi gueys,                                       "
-        echo "   My name is $NAME i'm $JOB at Liferay            "
-        echo "|                                                 |"
-        echo " ------------------------------------------------- "
-
-    else
-        echo "Invalid!!! Who are you? ;D"
+    CHECKED=true;
+    echo " ------------ Hello Community Linux!! ------------"
+    echo "|                                                 |"
+    echo "   Hi gueys,                                       "
+    echo "   My name is $NAME i'm $JOB at Liferay            "
+    echo "|                                                 |"
+    echo " ------------------------------------------------- "
+else
+    echo "Invalid!!! Who are you? ;D"
 fi
 
 if [ !CHECKED ]; then 
