@@ -1,3 +1,5 @@
+#!/bin/bash
+
 function routine () {
     echo "=========== Init executable..."
     echo ""
