@@ -10,7 +10,7 @@ echo "$name $port $database"
 
 if [$# -eq 0]
 then
-    echo ""
+    echo "Usage as it should be: '$0 name_container 33xx_port_container name_database'"
     exit 1
 fi
 
